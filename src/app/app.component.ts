@@ -10,6 +10,7 @@ export class AppComponent {
   isActive = true;
   username ='YSM';
   firstname = '';
+  
   divClicked($event) {
     $event.stopPropagation();
     return console.log(`You Clicked On Div `);
@@ -22,4 +23,5 @@ export class AppComponent {
     // this.username = name;
     return console.log(firstname);
   }
+  checked =true;
 }
