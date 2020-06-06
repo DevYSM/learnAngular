@@ -4,11 +4,13 @@ import { AppComponent } from './app.component';
 import { MyFirstComponent } from './my-first/my-first.component';
 import { DBServices } from './db.services';
 import { ItshareApiService } from './services/itshare-api.service';
+import { CourseComponent } from './course/course.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyFirstComponent, // Register The Class in Module
+    MyFirstComponent,
+    CourseComponent, // Register The Class in Module
   ],
   imports: [
     BrowserModule,

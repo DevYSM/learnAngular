@@ -1,0 +1,14 @@
+<!-- InterPorliation -->
+<h1>Course : {{ courseName }}</h1> 
+<hr>
+<h1 [textContent] = "courseName">Course : </h1> 
+<hr>
+<img src="{{ imgUrl }}" alt="{{ courseName }}"/>
+<hr>
+<img [src]="imgUrl">
+
+<table>
+    <tr>
+        <td [attr.colspan]="colSpan">{{ courseName }}</td>
+    </tr>
+</table>
