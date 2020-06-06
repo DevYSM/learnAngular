@@ -12,13 +12,15 @@
 <!-- <input [(ngModel)]="firstname" (keyup.enter)="onKeyUp(firstname)" type="text" class="form-control"> 
 <h2 >{{ firstname }}</h2>   -->
 
-<!-- <favorite></favorite> -->
+<favorite [isFavorite]='favState' (change)="faveChanged()">
 
+</favorite>
 
+<!-- 
 <div class="pipe">
     <h1>{{ employees.fullname | uppercase }}</h1>
     <h2>{{ employees.salary | currency:'USD':true }}</h2>
     <h3>{{ employees.hiringDate | date }}</h3>
     <h4>{{ employees.about | summery:30 }}</h4>
 </div>
-
+ -->

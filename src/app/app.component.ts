@@ -34,4 +34,8 @@ export class AppComponent {
     about: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
   }
 
+  favState = true;
+  faveChanged() {
+    console.log(this.favState)
+  }
 }
