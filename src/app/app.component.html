@@ -1,3 +1,13 @@
 <!-- <app-my-first></app-my-first> -->
 
-<course></course>
+<!-- <course></course> -->
+<!-- <div (click)="divClicked($event)">
+    <button (click)="btnClicked($event)" type="button" class="btn btn-danger">Save</button>
+</div> -->
+
+<!-- #name => template variable -->
+<!-- <input #name [value] = "username" (keyup.enter)="name=$event.target.value;onKeyUp(name.value)" type="text" class="form-control">  -->
+<!-- Two Wat Binding -->
+<!-- <input [value]="username" (keyup.enter)="firstname=$event.target.value;onKeyUp(firstname)" type="text" class="form-control">  -->
+<input [(ngModel)]="firstname" (keyup.enter)="onKeyUp(firstname)" type="text" class="form-control"> 
+<h2 >{{ firstname }}</h2>  
