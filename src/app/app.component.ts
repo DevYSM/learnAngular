@@ -10,7 +10,7 @@ export class AppComponent {
   isActive = true;
   username ='YSM';
   firstname = '';
-  
+
   divClicked($event) {
     $event.stopPropagation();
     return console.log(`You Clicked On Div `);
@@ -23,5 +23,15 @@ export class AppComponent {
     // this.username = name;
     return console.log(firstname);
   }
-  checked =true;
+  
+  // PIPE
+  employees = {
+    fullname: 'Yassen Sayed',
+    postion: 'Fullstack Developer',
+    rating:9.98,
+    salary: 5000,
+    hiringDate: new Date(2020, 5, 1),
+    about: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
+  }
+
 }
