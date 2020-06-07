@@ -7,7 +7,8 @@ import { ItshareApiService } from './services/itshare-api.service';
 import { CourseComponent } from './course/course.component';
 import { FormsModule } from '@angular/forms';
 import { FavoriteComponent } from './favorite/favorite.component';
-import { SummeryPipe } from './summery.pipe'; // To Run Two Way Binding
+import { SummeryPipe } from './summery.pipe';
+import { PanelComponent } from './panel/panel.component'; // To Run Two Way Binding
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SummeryPipe } from './summery.pipe'; // To Run Two Way Binding
     MyFirstComponent,
     CourseComponent,
     FavoriteComponent,
-    SummeryPipe, // Register The Class in Module
+    SummeryPipe,
+    PanelComponent, // Register The Class in Module
   ],
   imports: [
     BrowserModule,

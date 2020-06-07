@@ -1,22 +1,24 @@
-<!-- <app-my-first></app-my-first> -->
+<div class="container mt-5">
 
-<!-- <course></course> -->
-<!-- <div (click)="divClicked($event)">
+    <!-- <app-my-first></app-my-first> -->
+
+    <!-- <course></course> -->
+    <!-- <div (click)="divClicked($event)">
     <button (click)="btnClicked($event)" type="button" class="btn btn-danger">Save</button>
 </div> -->
 
-<!-- #name => template variable -->
-<!-- <input #name [value] = "username" (keyup.enter)="name=$event.target.value;onKeyUp(name.value)" type="text" class="form-control">  -->
-<!-- Two Wat Binding -->
-<!-- <input [value]="username" (keyup.enter)="firstname=$event.target.value;onKeyUp(firstname)" type="text" class="form-control">  -->
-<!-- <input [(ngModel)]="firstname" (keyup.enter)="onKeyUp(firstname)" type="text" class="form-control"> 
+    <!-- #name => template variable -->
+    <!-- <input #name [value] = "username" (keyup.enter)="name=$event.target.value;onKeyUp(name.value)" type="text" class="form-control">  -->
+    <!-- Two Wat Binding -->
+    <!-- <input [value]="username" (keyup.enter)="firstname=$event.target.value;onKeyUp(firstname)" type="text" class="form-control">  -->
+    <!-- <input [(ngModel)]="firstname" (keyup.enter)="onKeyUp(firstname)" type="text" class="form-control"> 
 <h2 >{{ firstname }}</h2>   -->
 
-<favorite [isFavorite]='favState' (change)="faveChanged()">
+    <!-- <favorite [isFavorite]='favState' (change)="faveChanged()">
 
-</favorite>
+</favorite> -->
 
-<!-- 
+    <!-- 
 <div class="pipe">
     <h1>{{ employees.fullname | uppercase }}</h1>
     <h2>{{ employees.salary | currency:'USD':true }}</h2>
@@ -24,3 +26,80 @@
     <h4>{{ employees.about | summery:30 }}</h4>
 </div>
  -->
+    <!-- <panel>
+     <ng-container class="header">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </ng-container>
+     <ng-container class="body">
+        Odit eaque debitis, deserunt cupiditate doloremque labore quibusdam veniam numquam? Aliquam rem reprehenderit incidunt recusandae vitae exercitationem pariatur, fugiat iure esse veritatis.
+     </ng-container>
+ </panel> -->
+
+    <!-- Loops -->
+    <!-- <ul>
+    <li *ngFor="let person of persons">{{ person }}</li>
+</ul> -->
+
+    <!-- Nested Loop -->
+    <!-- <ul *ngFor="let group of peopleByCountery">
+    <li>{{ group.countery }}</li>
+    <ul>
+        <li *ngFor="let pepole of group.names">{{ pepole.name }}</li>
+    </ul>
+</ul> -->
+    <!-- <button class="btn btn-success btn-sm mb-3" (click)="AddInArray()">Add In Array</button>
+    <br>
+    <div *ngIf="courses.length > 0">
+        <ul class="list-unstyled">
+            <li *ngFor="let course of courses; trackBy:TrackByCourse" class="mb-1 mt-1 pb-1 border-bottom">
+                <button (click)="RemoveFromArray(course)" class="btn btn-sm btn-danger mr-3">
+                    Remove
+                </button>
+                {{ course.courseName }}
+            </li>
+        </ul>
+    </div> 
+    <div *ngIf="courses.length === 0">
+        No course yet.
+    </div> -->
+    <!-- 
+<div *ngIf="courses.length > 0 ; then coursesList else noCourses"></div>
+
+<ng-template #coursesList>
+    <ul>
+        <li *ngFor="let course of courses; trackBy:TrackByCourse" class="mb-3">
+            <button (click)="RemoveFromArray(course)" class="btn btn-sm btn-danger mr-3">
+                Remove
+            </button>
+            {{ course.courseName }}
+        </li>
+    </ul>
+</ng-template>
+
+<ng-template #noCourses>
+    <div class="alert alert-danger"> No course yet.</div>
+</ng-template>
+ -->
+
+
+    <ul class="nav nav-pills">
+        <li class="mr-2">
+            <a href="#" (click)="SetView('courses')" [class.active]="defaultView == 'courses'">Courses</a>
+        </li>
+        <li>
+            <a href="#" (click)="SetView('certifications')"
+                [class.active]="defaultView == 'certifications'">Certifications</a>
+        </li>
+    </ul>
+
+    <div [ngSwitch]="defaultView">
+        <div *ngSwitchCase="'courses'">List of Courses ♥</div>
+        <div *ngSwitchCase="'certifications'">List of Certifications<<<<<<<<<<<<<<< /div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
