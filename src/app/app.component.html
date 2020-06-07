@@ -16,7 +16,7 @@
 
     <!-- <favorite [isFavorite]='favState' (change)="faveChanged()">
 
-</favorite> -->
+    </favorite> -->
 
     <!-- 
 <div class="pipe">
@@ -80,7 +80,7 @@
  -->
 
 
-    <ul class="nav nav-pills">
+    <!-- <ul class="nav nav-pills">
         <li class="mr-2">
             <a href="#" (click)="SetView('courses')" [class.active]="defaultView == 'courses'">Courses</a>
         </li>
@@ -94,12 +94,18 @@
         <div *ngSwitchCase="'courses'">List of Courses ♥</div>
         <div *ngSwitchCase="'certifications'">List of Certifications<<<<<<<<<<<<<<< /div>
         </div>
+ -->
+
+
+    <button [ngStyle]="{
+    'backgroundColor': color ? 'yellow' : 'red',
+    'color' : color ? 'black' : 'white',
+    'fontWeight' : color ? 'bold' : 'normal',
+    'width':color ? '100%' : '50%' }" (click)="changeColor()">
+        YSM
+    </button>
 
 
 
 
-
-
-
-
-    </div>
+</div>

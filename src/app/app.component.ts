@@ -97,4 +97,11 @@ export class AppComponent {
     this.defaultView = view;
   }
 
+
+  // ng style
+  color = false;
+  changeColor() {
+    this.color = !this.color
+  }
+
 }
