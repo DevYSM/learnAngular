@@ -1,0 +1,38 @@
+@@ Template Dreivn Validaion
+- Simple Form
+- Simple Validaion
+- Easy To Code
+-- Built In Validation
+-- NG2-Validation
+--------------------------------------------
+
+@@ Reactive Validaion
+- Embeded In Code => And This Give You Power In Validate And Control The Data
+- More Testable
+
+-------------------------------------------
+The difference between 
+[ Template Dreivn Validaion & Reactive Validaion ]
+  -----------------------------------------------
+  Validation in HTML        | Validaion In Code
+  -----------------------------------------------
+  Don't give full control   | Give full control
+  -----------------------------------------------
+  not testable              | Testable
+  -----------------------------------------------
+
+================================================================================
+Stream @ Reactive Programing 
+================================================================================
+
+1- @@ Stream 
+1- @@ Reactive Programing
+
+
+
+
+
+
+
+
+

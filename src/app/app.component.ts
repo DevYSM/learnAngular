@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -103,5 +104,9 @@ export class AppComponent {
   changeColor() {
     this.color = !this.color
   }
+
+  // Observable
+
+  // obs = Observable.interval
 
 }
