@@ -11,7 +11,7 @@ import { SummeryPipe } from './summery.pipe';
 import { PanelComponent } from './panel/panel.component';
 import { InputFormatDirective } from './input-format.directive';
 import { LoginComponent } from './login/login.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +27,7 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     FormsModule, // To Run Two Way Binding
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [DBServices, ItshareApiService], // register the provide of DB Services
   bootstrap: [AppComponent],
